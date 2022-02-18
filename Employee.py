@@ -8,3 +8,7 @@ class Employee:
         self.email = email
         self.phone_number = phone_number
         self.age = age
+
+    @property
+    def fullname(self):
+        return "{} {}".format(self.first_name, self.last_name)
